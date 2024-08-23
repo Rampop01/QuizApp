@@ -95,8 +95,6 @@
         id="quiz-container"
         class="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg w-full max-w-lg mx-4"
       >
-        <!-- Timer -->
-
         <!-- Question Count -->
         <div class="answered-count mb-4 text-lg" id="answered-count">
           Question 1 of 2
@@ -104,7 +102,7 @@
 
         <!-- Question Container -->
         <div id="question-container" class="text-left mb-4">
-          <!-- Question and Options will be dynamically inserted here -->
+          <!-- Question and Options mapped and display here -->
         </div>
 
         <!-- Navigation Buttons -->
@@ -130,42 +128,54 @@
         </button>
       </div>
 
-      <!-- Feedback Modal -->
+      <!-- Score Modal -->
       <div
         id="feedback-modal"
         class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
       >
-        <div
-          class="bg-white p-6 rounded-lg shadow-lg w-80 text-center items-center"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
-            />
-          </svg>
+        <div class="bg-white p-6 rounded-lg shadow-lg w-80 text-center">
+          <div class="flex justify-center mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-20 h-20 text-purple-500"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+              />
+            </svg>
+          </div>
 
-          <h2 class="text-xl font-bold mb-4">Quiz Feedback</h2>
+          <h2 class="text-xl font-bold mb-4">Quiz Score</h2>
           <p id="feedback-message">Your score is: <span id="score"></span></p>
-          <button
-            id="close-feedback"
-            class="bg-blue-500 text-white p-2 rounded mt-4"
-          >
-            Close
-          </button>
+
+          <div class="flex justify-center gap-4 mt-4">
+            <a href="/quizPage.html"
+              ><button
+                id="retake-button"
+                class="bg-yellow-500 text-white p-2 rounded"
+              >
+                Retake
+              </button></a
+            >
+            <a href="/index.html"
+              ><button
+                id="close-feedback"
+                class="bg-blue-500 text-white p-2 rounded"
+              >
+                Close
+              </button></a
+            >
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Link to external JS file -->
     <script src="quizPage.js"></script>
     <script src="script.js"></script>
   </body>

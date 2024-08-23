@@ -1,8 +1,9 @@
+//  QuizQues page functionality
 let questions = [];
 let currentQuestionIndex = 0;
 let timer;
-let timeLeft = 60 * 60; // 60 minutes in seconds
-const answers = []; // To store selected answers
+let timeLeft = 60 * 60;
+const answers = [];
 
 const questionContainer = document.getElementById("question-container");
 const prevButton = document.getElementById("prev-button");
@@ -19,7 +20,7 @@ fetch("questions.json")
   .then((response) => response.json())
   .then((data) => {
     questions = data;
-    answers.length = questions.length; // Initialize the answers array
+    answers.length = questions.length;
     initializeQuiz();
   })
   .catch((error) => console.error("Error loading questions:", error));
@@ -101,14 +102,14 @@ prevButton.addEventListener("click", () => handleNavigation(-1));
 nextButton.addEventListener("click", () => {
   if (currentQuestionIndex === questions.length - 1) {
     showFeedback();
-    clearInterval(timer); // Stop timer
+    clearInterval(timer);
   } else {
     handleNavigation(1);
   }
 });
 submitButton.addEventListener("click", () => {
   showFeedback();
-  clearInterval(timer); // Stop timer
+  clearInterval(timer);
 });
 closeFeedback.addEventListener("click", () =>
   feedbackModal.classList.add("hidden")
