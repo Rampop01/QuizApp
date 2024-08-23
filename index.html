@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+    <!--My Navbar ------------------------------------------------------------------------------>
+    <nav
+      class="flex justify-between items-center p-4 bg-white shadow-md relative"
+    >
+      <!--  QuizQues Logo -->
+      <div class="text-xl font-bold">
+        <span class="text-purple-800 text-4xl mt"
+          ><span class="text-6xl">Q</span>uiz</span
+        ><span class="text-red-500 text-4xl">Ques</span>
+      </div>
+
+      <!-- Calculator Icon -->
+      <div class="relative">
+        <button id="calculator-button" class="text-gray-800 focus:outline-none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M16 2H8a2 2 0 00-2 2v16a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2zM8 6h8M8 10h8M8 14h8M10 18h4"
+            />
+          </svg>
+        </button>
+
+        <!-- Calculator Modal  -->
+        <div
+          id="calculator-modal"
+          class="absolute right-0 mt-2 bg-white p-2 rounded-lg shadow-lg w-48 hidden"
+        >
+          <div class="text-center">
+            <div
+              id="calculator-display"
+              class="bg-gray-100 p-2 rounded mb-2 text-right text-lg font-mono"
+            >
+              0
+            </div>
+            <!-- Calculator Buttons -->
+            <div class="grid grid-cols-4 gap-2">
+              <button class="bg-gray-200 p-2 rounded" data-value="7">7</button>
+              <button class="bg-gray-200 p-2 rounded" data-value="8">8</button>
+              <button class="bg-gray-200 p-2 rounded" data-value="9">9</button>
+              <button class="bg-gray-300 p-2 rounded" data-value="/">/</button>
+              <button class="bg-gray-200 p-2 rounded" data-value="4">4</button>
+              <button class="bg-gray-200 p-2 rounded" data-value="5">5</button>
+              <button class="bg-gray-200 p-2 rounded" data-value="6">6</button>
+              <button class="bg-gray-300 p-2 rounded" data-value="*">*</button>
+              <button class="bg-gray-200 p-2 rounded" data-value="1">1</button>
+              <button class="bg-gray-200 p-2 rounded" data-value="2">2</button>
+              <button class="bg-gray-200 p-2 rounded" data-value="3">3</button>
+              <button class="bg-gray-300 p-2 rounded" data-value="-">-</button>
+              <button class="bg-gray-200 p-2 rounded col-span-2" data-value="0">
+                0
+              </button>
+              <button class="bg-gray-200 p-2 rounded" data-value=".">.</button>
+              <button class="bg-gray-300 p-2 rounded" data-value="+">+</button>
+              <button class="bg-gray-400 p-2 rounded col-span-4" id="equals">
+                =
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>
