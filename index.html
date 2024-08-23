@@ -14,9 +14,8 @@
       <!--QuizQues Logo -->
       <div class="text-xl font-bold">
         <span class="text-purple-800 text-4xl mt">
-          <span class="text-6xl">Q</span>uiz
-        </span>
-        <span class="text-red-500 text-4xl">Ques</span>
+          <span class="text-6xl">Q</span>uiz</span
+        ><span class="text-red-500 text-4xl">Ques</span>
       </div>
 
       <!-- Calculator Icon -->
@@ -76,6 +75,58 @@
         </div>
       </div>
     </nav>
+
+    <div class="flex items-center justify-center min-h-screen mx-4">
+      <div class="bg-white p-6 rounded-lg shadow-lg w-92 h-92 text-left">
+        <div class="flex justify-between">
+          <h1 class="text-2xl font-bold mb-4">Quiz Instructions</h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 5a2 2 0 012-2h12a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm2 0v14h12V5H5zm0 0h12M5 19h12"
+            />
+          </svg>
+        </div>
+
+        <hr class="" />
+        <p class="mb-4 mt-2">
+          Welcome to the <span class="text-red-800">QuizQues</span>! Here are
+          some instructions to get you started:
+        </p>
+        <ul class="list-disc list-inside mb-4">
+          <li>
+            You have <span class="text-red-800 font-bold"> 60mins</span> to
+            complete 50 questions
+          </li>
+          <li>Once you start the quiz your time begin to count</li>
+          <li>Read each question carefully.</li>
+          <li>Select the correct answer from the options.</li>
+          <li>
+            There is calculator at the top-right corner of the screen if needed
+          </li>
+          <li>
+            Use the 'Next' and 'Previous' buttons to navigate between questions.
+          </li>
+          <li>Click 'Submit' to finish the quiz and see your results.</li>
+        </ul>
+        <hr />
+        <div class="flex justify-between mt-2">
+          <a href="quiz.html" class="bg-red-500 text-white p-2 rounded"
+            >Exit Quiz</a
+          ><a href="quizPage.html" class="bg-blue-500 text-white p-2 rounded"
+            >Start Quiz</a
+          >
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
