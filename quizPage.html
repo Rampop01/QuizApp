@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz Page</title>
+    <title>QuizQues</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="quiz.css" />
   </head>
@@ -13,17 +13,17 @@
     >
       <!--QuizQues Logo -->
       <div class="text-xl font-bold">
-        <span class="text-purple-800 text-4xl mt">
-          <span class="text-6xl">Q</span>uiz</span
-        ><span class="text-red-500 text-4xl">Ques</span>
+        <span class="text-purple-800 text-2xl md:text-4xl mt">
+          <span class="text-4xl md:text-6xl">Q</span>uiz</span
+        ><span class="text-red-500 text-2xl md:text-4xl">Ques</span>
       </div>
 
-      <div class="flex gap-12">
+      <div class="flex md:gap-12 gap-4 -mb-2">
         <div
-          class="timer mb-4 text-2xl font-semibold text-purple-800"
+          class="timer text-md md:text-2xl font-semibold text-purple-800"
           id="timer"
         >
-          TIME LEFT: 60:00
+          TIME LEFT: 20:00
         </div>
 
         <!-- Calculator Icon -->
@@ -93,7 +93,7 @@
       <!-- Quiz Container -->
       <div
         id="quiz-container"
-        class="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg w-full max-w-lg mx-4"
+        class="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg w-full max-w-lg mx-4 -mt-36"
       >
         <!-- Question Count -->
         <div class="answered-count mb-4 text-lg" id="answered-count">
@@ -102,7 +102,7 @@
 
         <!-- Question Container -->
         <div id="question-container" class="text-left mb-4">
-          <!-- Question and Options mapped and display here -->
+          <!-- Question and Options mapped and display  -->
         </div>
 
         <!-- Navigation Buttons -->
