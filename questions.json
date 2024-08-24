@@ -11,7 +11,7 @@
   },
   {
     "question": "Which symbol is used for comments in JavaScript?",
-    "options": ["//", "/* */", "<!-- -->", "Both // and /* */"],
+    "options": ["//", "/* */", "!-- --", "Both // and /* */"],
     "answer": "Both // and /* */"
   },
   {
