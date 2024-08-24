@@ -1,336 +1,349 @@
 [
   {
-    "question": "What does CSS stand for?",
-    "options": [
-      "Colorful Style Sheets",
-      "Creative Style Sheets",
-      "Cascading Style Sheets",
-      "Computer Style Sheets"
-    ],
-    "answer": "Cascading Style Sheets"
-  },
-
-  {
-    "question": "How do you write 'Hello World' in an alert box?",
-    "options": [
-      "msgBox('Hello World');",
-      "alertBox('Hello World');",
-      "msg('Hello World');",
-      "alert('Hello World');"
-    ],
-    "answer": "alert('Hello World');"
+    "question": "Which of the following is a correct way to declare a JavaScript variable?",
+    "options": ["var myVar;", "let myVar;", "const myVar;", "All of the above"],
+    "answer": "All of the above"
   },
   {
-    "question": "How do you create a function in JavaScript?",
-    "options": [
-      "function myFunction()",
-      "function:myFunction()",
-      "function = myFunction()",
-      "function => myFunction()"
-    ],
-    "answer": "function myFunction()"
+    "question": "What is the output of `typeof null` in JavaScript?",
+    "options": ["'null'", "'object'", "'undefined'", "'number'"],
+    "answer": "'object'"
   },
   {
-    "question": "How do you call a function named 'myFunction'?",
+    "question": "Which symbol is used for comments in JavaScript?",
+    "options": ["//", "/* */", "<!-- -->", "Both // and /* */"],
+    "answer": "Both // and /* */"
+  },
+  {
+    "question": "What will the following code output: `console.log(2 + '2');`?",
+    "options": ["22", "4", "NaN", "'2'"],
+    "answer": "22"
+  },
+  {
+    "question": "Which method is used to add elements to the end of an array in JavaScript?",
+    "options": [".push()", ".pop()", ".shift()", ".unshift()"],
+    "answer": ".push()"
+  },
+  {
+    "question": "What is the difference between `==` and `===` in JavaScript?",
     "options": [
-      "call myFunction()",
+      "`==` compares values, `===` compares values and types.",
+      "`==` compares values and types, `===` compares values.",
+      "They are identical.",
+      "`==` compares references, `===` compares values."
+    ],
+    "answer": "`==` compares values, `===` compares values and types."
+  },
+  {
+    "question": "Which of the following is NOT a JavaScript data type?",
+    "options": ["String", "Number", "Boolean", "Character"],
+    "answer": "Character"
+  },
+  {
+    "question": "What is the correct way to create a function in JavaScript?",
+    "options": [
+      "function myFunction() {}",
+      "def myFunction() {}",
+      "func myFunction() {}",
+      "function: myFunction() {}"
+    ],
+    "answer": "function myFunction() {}"
+  },
+  {
+    "question": "How do you call a function named `myFunction`?",
+    "options": [
       "call function myFunction()",
       "myFunction()",
+      "call myFunction()",
       "Call.myFunction()"
     ],
     "answer": "myFunction()"
   },
-
   {
-    "question": "How to write an IF statement in JavaScript?",
-    "options": ["if i = 5 then", "if i == 5 then", "if (i == 5)", "if i = 5"],
-    "answer": "if (i == 5)"
+    "question": "Which method converts a JSON string to a JavaScript object?",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.toObject()",
+      "JSON.convert()"
+    ],
+    "answer": "JSON.parse()"
   },
   {
-    "question": "How does a WHILE loop start?",
+    "question": "Which of the following is the correct syntax to print a message in the console?",
     "options": [
-      "while (i <= 10; i++)",
-      "while (i <= 10)",
-      "while i = 1 to 10",
-      "while i <= 10"
+      "console.print('Hello World');",
+      "console.log('Hello World');",
+      "console.write('Hello World');",
+      "print('Hello World');"
     ],
-    "answer": "while (i <= 10)"
+    "answer": "console.log('Hello World');"
   },
   {
-    "question": "What is the correct way to write a JavaScript array?",
+    "question": "Which of the following is a JavaScript framework?",
+    "options": ["React", "Laravel", "Django", "Flask"],
+    "answer": "React"
+  },
+  {
+    "question": "How do you add a comment in JavaScript?",
+    "options": ["<!-- Comment -->", "// Comment", "# Comment", "/* Comment */"],
+    "answer": "// Comment"
+  },
+  {
+    "question": "What does the 'this' keyword refer to in JavaScript?",
     "options": [
-      "var colors = 'red', 'green', 'blue'",
-      "var colors = (1:'red', 2:'green', 3:'blue')",
-      "var colors = ['red', 'green', 'blue']",
-      "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')"
+      "It refers to the global object.",
+      "It refers to the object from which it was called.",
+      "It refers to the function in which it was called.",
+      "It refers to the parent object."
     ],
-    "answer": "var colors = ['red', 'green', 'blue']"
+    "answer": "It refers to the object from which it was called."
+  },
+  {
+    "question": "Which method removes the last element from an array?",
+    "options": [".pop()", ".push()", ".shift()", ".slice()"],
+    "answer": ".pop()"
+  },
+  {
+    "question": "What will the following code output: `console.log(0.1 + 0.2 === 0.3);`?",
+    "options": ["true", "false", "undefined", "NaN"],
+    "answer": "false"
+  },
+  {
+    "question": "Which method is used to convert a JavaScript object to a JSON string?",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.convert()",
+      "JSON.toString()"
+    ],
+    "answer": "JSON.stringify()"
+  },
+  {
+    "question": "Which method is used to add one or more elements to the beginning of an array?",
+    "options": [".unshift()", ".shift()", ".push()", ".pop()"],
+    "answer": ".unshift()"
+  },
+  {
+    "question": "Which method creates a new array by calling a function for every array element?",
+    "options": [".map()", ".reduce()", ".forEach()", ".filter()"],
+    "answer": ".map()"
+  },
+  {
+    "question": "What does NaN stand for in JavaScript?",
+    "options": [
+      "Not a Number",
+      "Negative a Number",
+      "Null a Number",
+      "None a Number"
+    ],
+    "answer": "Not a Number"
+  },
+  {
+    "question": "Which method joins all elements of an array into a string?",
+    "options": [".join()", ".concat()", ".reduce()", ".map()"],
+    "answer": ".join()"
+  },
+  {
+    "question": "Which method can be used to find the largest number in an array?",
+    "options": [
+      "Math.max(...array)",
+      "Math.max(array)",
+      "Math.maximum(array)",
+      "Math.maxAll(array)"
+    ],
+    "answer": "Math.max(...array)"
+  },
+  {
+    "question": "Which method is used to stop an interval timer in JavaScript?",
+    "options": [
+      "clearInterval()",
+      "stopInterval()",
+      "clearTimer()",
+      "stopTimer()"
+    ],
+    "answer": "clearInterval()"
+  },
+  {
+    "question": "What does the `typeof` operator return?",
+    "options": [
+      "The data type of the operand",
+      "The length of the operand",
+      "The value of the operand",
+      "The name of the operand"
+    ],
+    "answer": "The data type of the operand"
+  },
+  {
+    "question": "Which operator is used to assign a value to a variable in JavaScript?",
+    "options": ["=", "==", "===", "!="],
+    "answer": "="
+  },
+  {
+    "question": "Which JavaScript method is used to select an HTML element by its ID?",
+    "options": [
+      "getElementById()",
+      "getElementsByClassName()",
+      "querySelector()",
+      "getElementByTagName()"
+    ],
+    "answer": "getElementById()"
+  },
+  {
+    "question": "How can you create an array in JavaScript?",
+    "options": [
+      "let arr = [];",
+      "let arr = Array();",
+      "let arr = new Array();",
+      "All of the above"
+    ],
+    "answer": "All of the above"
+  },
+  {
+    "question": "Which of the following is NOT a looping structure in JavaScript?",
+    "options": ["for", "while", "foreach", "do-while"],
+    "answer": "foreach"
+  },
+  {
+    "question": "Which of the following methods returns the number of milliseconds since 1 January 1970?",
+    "options": [
+      "Date.now()",
+      "Date.getMilliseconds()",
+      "Date.milliseconds()",
+      "Date.time()"
+    ],
+    "answer": "Date.now()"
+  },
+  {
+    "question": "Which method removes the first element from an array?",
+    "options": [".shift()", ".unshift()", ".pop()", ".splice()"],
+    "answer": ".shift()"
+  },
+  {
+    "question": "Which method creates a new array with elements that pass a test?",
+    "options": [".filter()", ".map()", ".reduce()", ".slice()"],
+    "answer": ".filter()"
+  },
+  {
+    "question": "Which JavaScript method is used to write HTML content into an HTML element?",
+    "options": [
+      "innerHTML",
+      "document.write()",
+      "document.createElement()",
+      "createElement()"
+    ],
+    "answer": "innerHTML"
+  },
+  {
+    "question": "Which of the following is NOT a valid JavaScript keyword?",
+    "options": ["let", "var", "function", "integer"],
+    "answer": "integer"
+  },
+  {
+    "question": "How do you declare a constant in JavaScript?",
+    "options": ["const", "let", "var", "constant"],
+    "answer": "const"
+  },
+  {
+    "question": "What will the following code output: `console.log([] + []);`?",
+    "options": [
+      "'' (an empty string)",
+      "[] (an empty array)",
+      "null",
+      "undefined"
+    ],
+    "answer": "'' (an empty string)"
+  },
+  {
+    "question": "Which JavaScript keyword is used to check whether a condition is true or false?",
+    "options": ["if", "for", "while", "switch"],
+    "answer": "if"
+  },
+  {
+    "question": "Which method adds new items to the end of an array, and returns the new length?",
+    "options": [".push()", ".pop()", ".shift()", ".unshift()"],
+    "answer": ".push()"
+  },
+  {
+    "question": "Which event occurs when the user clicks on an HTML element?",
+    "options": ["onchange", "onmouseover", "onmouseclick", "onclick"],
+    "answer": "onclick"
   },
   {
     "question": "How do you round the number 7.25 to the nearest integer?",
     "options": [
       "Math.round(7.25)",
-      "Math.rnd(7.25)",
       "round(7.25)",
+      "Math.rnd(7.25)",
       "rnd(7.25)"
     ],
     "answer": "Math.round(7.25)"
   },
+
   {
-    "question": "How do you find the number with the highest value of x and y?",
-    "options": ["ceil(x, y)", "Math.ceil(x, y)", "Math.max(x, y)", "top(x, y)"],
-    "answer": "Math.max(x, y)"
-  },
-  {
-    "question": "What is the correct syntax for creating a class in JavaScript?",
-    "options": [
-      "class MyClass {}",
-      "function MyClass() {}",
-      "var MyClass = function() {}",
-      "MyClass.prototype = {}"
-    ],
-    "answer": "class MyClass {}"
-  },
-  {
-    "question": "Which of the following is an immediately invoked function expression (IIFE)?",
-    "options": [
-      "function myFunction() {}",
-      "(function() {})();",
-      "(() => {});",
-      "function() {}"
-    ],
-    "answer": "(function() {})();"
-  },
-  {
-    "question": "How do you declare a JavaScript variable?",
-    "options": [
-      "var carName;",
-      "v carName;",
-      "variable carName;",
-      "var: carName;"
-    ],
-    "answer": "var carName;"
-  },
-  {
-    "question": "Which operator is used to assign a value to a variable?",
-    "options": ["*", "-", "=", "x"],
-    "answer": "="
-  },
-  {
-    "question": "What is the correct JavaScript syntax to change the content of the HTML element below?\n\n<p id='demo'>This is a demonstration.</p>",
-    "options": [
-      "document.getElementById('demo').innerHTML = 'Hello World!';",
-      "document.getElementByName('p').innerHTML = 'Hello World!';",
-      "#demo.innerHTML = 'Hello World!';",
-      "document.getElement('p').innerHTML = 'Hello World!';"
-    ],
-    "answer": "document.getElementById('demo').innerHTML = 'Hello World!';"
-  },
-  {
-    "question": "Which event occurs when the user clicks on an HTML element?",
-    "options": ["onchange", "onclick", "onmouseclick", "onmouseover"],
-    "answer": "onclick"
+    "question": "What will the following code output: `console.log('5' - 3);`?",
+    "options": ["2", "'53'", "'5'", "undefined"],
+    "answer": "2"
   },
 
   {
-    "question": "What is the correct way to write a JavaScript object?",
+    "question": "Which keyword is used to declare a variable in JavaScript?",
+    "options": ["let", "var", "const", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "How do you check if a value is NaN in JavaScript?",
+    "options": ["isNaN()", "typeof", "== NaN", "isNan()"],
+    "answer": "isNaN()"
+  },
+  {
+    "question": "Which method is used to convert a string to a number in JavaScript?",
+    "options": ["parseInt()", "parseFloat()", "Number()", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "Which of the following is NOT a falsy value in JavaScript?",
+    "options": ["0", "''", "null", "1"],
+    "answer": "1"
+  },
+  {
+    "question": "Which keyword is used to handle exceptions in JavaScript?",
+    "options": ["try", "catch", "finally", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "How do you check the length of an array in JavaScript?",
+    "options": ["array.length", "array.size", "array.count", "array.len"],
+    "answer": "array.length"
+  },
+  {
+    "question": "What will the following code output: `console.log(2 == '2');`?",
+    "options": ["true", "false", "undefined", "NaN"],
+    "answer": "true"
+  },
+  {
+    "question": "What is the purpose of the `this` keyword in JavaScript?",
     "options": [
-      "var person = {firstName:'John', lastName:'Doe', age:50, eyeColor:'blue'};",
-      "var person = (firstName:'John', lastName:'Doe', age:50, eyeColor:'blue');",
-      "var person = [firstName:'John', lastName:'Doe', age:50, eyeColor:'blue'];",
-      "var person = (firstName='John', lastName='Doe', age=50, eyeColor='blue');"
+      "It refers to the global object.",
+      "It refers to the function in which it was declared.",
+      "It refers to the object that is executing the current function.",
+      "It refers to the previous function's object."
     ],
-    "answer": "var person = {firstName:'John', lastName:'Doe', age:50, eyeColor:'blue'};"
+    "answer": "It refers to the object that is executing the current function."
   },
   {
-    "question": "How do you find the number with the lowest value of x and y?",
+    "question": "What will be the output of the following code: `console.log([1] == [1]);`?",
+    "options": ["true", "false", "undefined", "NaN"],
+    "answer": "false"
+  },
+  {
+    "question": "Which function is used to prevent an element from being selected?",
     "options": [
-      "Math.min(x, y)",
-      "Math.floor(x, y)",
-      "Math.minval(x, y)",
-      "Math.minimize(x, y)"
+      "preventDefault()",
+      "stopPropagation()",
+      "stopImmediatePropagation()",
+      "return false"
     ],
-    "answer": "Math.min(x, y)"
-  },
-
-  {
-    "question": "Which built-in method sorts the elements of an array?",
-    "options": [
-      "changeOrder(order)",
-      "order()",
-      "sort()",
-      "None of the above."
-    ],
-    "answer": "sort()"
-  },
-  {
-    "question": "Which of the following function of Number object returns the number's value?",
-    "options": ["toString()", "valueOf()", "toLocaleString()", "toPrecision()"],
-    "answer": "valueOf()"
-  },
-  {
-    "question": "Which of the following function of String object returns the calling string value converted to lower case?",
-    "options": [
-      "toLocaleLowerCase()",
-      "toLowerCase()",
-      "toString()",
-      "substring()"
-    ],
-    "answer": "toLowerCase()"
-  },
-  {
-    "question": "Which of the following function of Array object joins all elements of an array into a string?",
-    "options": ["concat()", "join()", "pop()", "map()"],
-    "answer": "join()"
-  },
-  {
-    "question": "Which of the following function of Array object removes the last element from an array and returns that element?",
-    "options": ["pop()", "push()", "join()", "map()"],
-    "answer": "pop()"
-  },
-  {
-    "question": "Which of the following function of String object returns the primitive value of the specified object?",
-    "options": [
-      "toLocaleUpperCase()",
-      "toUpperCase()",
-      "toString()",
-      "valueOf()"
-    ],
-    "answer": "valueOf()"
-  },
-  {
-    "question": "Which of the following function of String object returns a number indicating the Unicode value of the character at the given index?",
-    "options": ["charAt()", "charCodeAt()", "concat()", "indexOf()"],
-    "answer": "charCodeAt()"
-  },
-  {
-    "question": "Which of the following function of Array object adds one or more elements to the front of an array and returns the new length of the array?",
-    "options": ["unshift()", "sort()", "splice()", "toString()"],
-    "answer": "unshift()"
-  },
-  {
-    "question": "Which of the following function of Array object removes the first element from an array and returns that element?",
-    "options": ["reverse()", "shift()", "slice()", "some()"],
-    "answer": "shift()"
-  },
-  {
-    "question": "Which of the following function of Array object adds and/or removes elements from an array?",
-    "options": ["toSource()", "sort()", "splice()", "unshift()"],
-    "answer": "splice()"
-  },
-  {
-    "question": "Which of the following function of Array object returns a new array with all elements that pass the test implemented by the provided function?",
-    "options": ["some()", "every()", "filter()", "map()"],
-    "answer": "filter()"
-  },
-  {
-    "question": "Which of the following function of Array object applies a function against an accumulator and each array element (from left-to-right) to reduce it to a single value?",
-    "options": ["reduce()", "map()", "filter()", "reduceRight()"],
-    "answer": "reduce()"
-  },
-  {
-    "question": "Which of the following function of Array object determines whether all the members of an array satisfy the test implemented by the provided function?",
-    "options": ["some()", "every()", "filter()", "forEach()"],
-    "answer": "every()"
-  },
-  {
-    "question": "Which of the following function of Array object returns the elements of an array as a string separated by commas?",
-    "options": ["toString()", "join()", "slice()", "concat()"],
-    "answer": "toString()"
-  },
-  {
-    "question": "Which of the following function of Array object returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included)?",
-    "options": ["slice()", "splice()", "copyWithin()", "concat()"],
-    "answer": "slice()"
-  },
-  {
-    "question": "Which of the following function of Array object returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included)?",
-    "options": ["slice()", "splice()", "copyWithin()", "concat()"],
-    "answer": "slice()"
-  },
-  {
-    "question": "Which of the following function of Array object returns a new array with all elements that pass the test implemented by the provided function?",
-    "options": ["some()", "every()", "filter()", "map()"],
-    "answer": "filter()"
-  },
-  {
-    "question": "Which of the following function of Array object returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included)?",
-    "options": ["slice()", "splice()", "copyWithin()", "concat()"],
-    "answer": "slice()"
-  },
-  {
-    "question": "Which of the following function of Array object reverses the elements of an array in place?",
-    "options": ["reverse()", "sort()", "shift()", "pop()"],
-    "answer": "reverse()"
-  },
-  {
-    "question": "Which of the following function of Array object creates a new array with all elements that pass the test implemented by the provided function?",
-    "options": ["every()", "some()", "filter()", "map()"],
-    "answer": "filter()"
-  },
-  {
-    "question": "Which of the following function of Array object determines whether the provided function returns true for any element in the array?",
-    "options": ["every()", "some()", "filter()", "map()"],
-    "answer": "some()"
-  },
-  {
-    "question": "Which of the following function of Array object joins all elements of an array into a string?",
-    "options": ["concat()", "join()", "pop()", "map()"],
-    "answer": "join()"
-  },
-  {
-    "question": "Which of the following function of Array object returns a new array with the results of calling a provided function on every element in the calling array?",
-    "options": ["map()", "filter()", "reduce()", "some()"],
-    "answer": "map()"
-  },
-  {
-    "question": "Which of the following function of Array object adds one or more elements to the end of an array and returns the new length of the array?",
-    "options": ["push()", "pop()", "shift()", "unshift()"],
-    "answer": "push()"
-  },
-  {
-    "question": "Which of the following function of Array object returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included)?",
-    "options": ["slice()", "splice()", "copyWithin()", "concat()"],
-    "answer": "slice()"
-  },
-  {
-    "question": "Which of the following function of Array object removes the first element from an array and returns that element?",
-    "options": ["shift()", "pop()", "reverse()", "slice()"],
-    "answer": "shift()"
-  },
-  {
-    "question": "Which of the following function of Array object returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included)?",
-    "options": ["slice()", "splice()", "copyWithin()", "concat()"],
-    "answer": "slice()"
-  },
-  {
-    "question": "Which of the following function of Array object creates a new array with all elements that pass the test implemented by the provided function?",
-    "options": ["every()", "some()", "filter()", "map()"],
-    "answer": "filter()"
-  },
-  {
-    "question": "Which of the following function of Array object returns the elements of an array as a string separated by commas?",
-    "options": ["toString()", "join()", "slice()", "concat()"],
-    "answer": "toString()"
-  },
-  {
-    "question": "Which of the following function of Array object reverses the elements of an array in place?",
-    "options": ["reverse()", "sort()", "shift()", "pop()"],
-    "answer": "reverse()"
-  },
-  {
-    "question": "Which of the following function of Array object returns a new array with the results of calling a provided function on every element in the calling array?",
-    "options": ["map()", "filter()", "reduce()", "some()"],
-    "answer": "map()"
-  },
-  {
-    "question": "Which of the following function of Array object removes the last element from an array and returns that element?",
-    "options": ["pop()", "push()", "shift()", "unshift()"],
-    "answer": "pop()"
-  },
-  {
-    "question": "Which of the following function of Array object returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included)?",
-    "options": ["slice()", "splice()", "copyWithin()", "concat()"],
-    "answer": "slice()"
+    "answer": "return false"
   }
 ]
